@@ -1,0 +1,34 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix w3i: <https://w3id.org/>.
+
+w3i:
+    a skos:ConceptScheme;
+    dct:description "My wonderful vocabulary."@en;
+    dct:title "sources"@en;
+    skos:hasTopConcept w3i:32682, w3i:c9c3b.
+w3i:08f31
+    a skos:Concept;
+    skos:broader w3i:32682;
+    skos:inScheme w3i:;
+    skos:prefLabel "Synchrotron"@de, "synchrotron"@en.
+w3i:140a3
+    a skos:Concept;
+    skos:broader w3i:c9c3b;
+    skos:inScheme w3i:;
+    skos:prefLabel "Reaktor"@de, "reactor"@en.
+w3i:32682
+    a skos:Concept;
+    skos:narrower w3i:08f31;
+    skos:prefLabel "R\u00f6ntgenstrahl"@de, "x-ray"@en;
+    skos:topConceptOf w3i: .
+w3i:8f3fa
+    a skos:Concept;
+    skos:broader w3i:c9c3b;
+    skos:inScheme w3i:;
+    skos:prefLabel "Spallation"@de, "spallation"@en.
+w3i:c9c3b
+    a skos:Concept;
+    skos:narrower w3i:140a3, w3i:8f3fa;
+    skos:prefLabel "Neutron"@de, "neutron"@en;
+    skos:topConceptOf w3i: .
